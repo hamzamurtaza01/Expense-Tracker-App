@@ -8,8 +8,20 @@
   box-sizing: border-box;
 }
 
+/* This is for making everything unselectable 
+(the blue thing that highlights every text on the webpage) */
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
 body {
-  background-color: #f7f7f7;
+  background-color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +29,11 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+}
+
+.MainContainer {
+  background-color: white;
+  padding: 25px;
 }
 
 .container {
@@ -135,7 +152,7 @@ input[type='number'] {
   background-color: #e74c3c;
   border: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 20px;
   padding: 2px 5px;
   position: absolute;
